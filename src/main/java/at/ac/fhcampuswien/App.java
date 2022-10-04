@@ -75,7 +75,26 @@ public class App {
     //todo Task 6
     public void compareTwoNumbers(){
         // input your solution here
+Scanner sc = new Scanner(System.in);
 
+int x = sc.nextInt();
+int y = sc.nextInt();
+
+if (x < y ) {
+    System.out.println("n1:" + x + System.lineSeparator() +
+            "n2:" + y + System.lineSeparator() +
+            x + "<" + y);
+}
+if (x == y ) {
+    System.out.println("n1:" + x + System.lineSeparator() +
+            "n2:" + y + System.lineSeparator() +
+            x + "=" + y);
+}
+        if (x > y ) {
+            System.out.println("n1:" + x + System.lineSeparator() +
+                    "n2:" + y + System.lineSeparator() +
+                    x + ">" + y);
+        }
 
 
     }
@@ -83,6 +102,8 @@ public class App {
     //todo Task 7
     public void ratingSalesPerson(){
         // input your solution here
+
+
     }
 
     //todo Task 8
