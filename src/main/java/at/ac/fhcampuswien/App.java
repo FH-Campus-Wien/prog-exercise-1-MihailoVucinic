@@ -103,12 +103,12 @@ Scanner sc = new Scanner(System.in);
 
 
 System.out.println("Enter annual revenue: " );
-        int rev = sc.nextInt();
+int rev = sc.nextInt();
 
 
-if (rev < 0 || rev >= 100000) {
+if (rev <= 0 || rev >= 100000) {
     System.out.println("Invalid revenue");
-}else if (0 <= rev && rev < 20000) {
+}else if (0 < rev && rev < 20000) {
     System.out.println("Poor sales revenue");
 } else if (20000 <= rev && rev < 50000) {
     System.out.println("Average sales revenue");
@@ -122,16 +122,47 @@ if (rev < 0 || rev >= 100000) {
 
     //todo Task 8
     public void getCommissionRate(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter CommissionClass: ");
+        int com = sc.nextInt();
+
+        switch (com) {
+            case 1:
+                System.out.print("Your Commission Rate was set to 0.01");
+                break;
+            case 2:
+                System.out.print("Your Commission Rate was set to 0.02");
+                break;
+            case 3:
+                System.out.print("Your Commission Rate was set to 0.03");
+                break;
+            case 4:
+                System.out.print("Your Commission Rate was set to 0.04");
+                break;
+            default:
+                System.out.println("Your Commission Rate was set to 0.00");
+        }
         // input your solution here
     }
 
     //todo Task 9
     public void leapyear(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Year: ");
+        int year = sc.nextInt();
+
+        if ( (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+            System.out.println("Leapyear");
+        }else {
+            System.out.println("Not a Leapyear");
+        }
         // input your solution here
     }
 
     //todo Task 10
     public void transposedNumbers(){
+
+
         // input your solution here
     }
 
