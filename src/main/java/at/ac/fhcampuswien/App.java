@@ -13,16 +13,19 @@ public class App {
     //todo Task 2
     public void helloRobot(){
         // input your solution here
-        System.out.println("0123456789012345678901" + System.lineSeparator() +
-                "         __" + System.lineSeparator() +
-                " _(\\    |@@|" + System.lineSeparator() +
-                "(__/\\__ \\--/ __" + System.lineSeparator() +
-                "   \\___|----|  |   __" + System.lineSeparator() +
-                "       \\ }{ /\\ )_ / _\\" + System.lineSeparator() +
-                "       /\\__/\\ \\__O (__" + System.lineSeparator() +
-                "      (--/\\--)    \\__/" + System.lineSeparator() +
-                "      _)(  )(_" + System.lineSeparator() +
-                "     `---''---`" + System.lineSeparator());
+        System.out.println("0123456789012345678901\n" +
+                "         __\n" +
+                " _(\\    |@@|\n" +
+                "(__/\\__ \\--/ __\n" +
+                "   \\___|----|  |   __\n" +
+                "       \\ }{ /\\ )_ / _\\\n" +
+                "       /\\__/\\ \\__O (__\n" +
+                "      (--/\\--)    \\__/\n" +
+                "      _)(  )(_\n" +
+                "     `---''---`"
+
+        );
+
     }
 
     //todo Task 3
@@ -54,107 +57,103 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int y = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
 
         System.out.println("Before Swap:");
-        System.out.println("x: " + x);
-        System.out.println("y: " + y);
+        System.out.print("x: ");
+        System.out.print("y: ");
 
-        x=x+y;
-        y=x-y;
-        x=x-y;
+        x = x+y;
+        y = x-y;
+        x = x-y;
 
         System.out.println("After Swap:");
-        System.out.println("x: " + x);
-        System.out.println("y: " + y);
+        System.out.println("x: "+ x);
+        System.out.println("y: "+ y);
         // input your solution here
     }
 
     //todo Task 6
     public void compareTwoNumbers(){
         // input your solution here
-Scanner sc = new Scanner(System.in);
-int x = sc.nextInt();
-int y = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n1 = scanner.nextInt();
+        int n2 = scanner.nextInt();
 
-        if (x < y ) {
-            System.out.println("n1:" + x + System.lineSeparator() +
-                    "n2:" + y + System.lineSeparator() +
-                    x + "<" + y);
+        if (n2 > n1) {
+            System.out.println("n1: " + "n2:" + " n2 > n1");
         }
-        if (x == y ) {
-            System.out.println("n1:" + x + System.lineSeparator() +
-                    "n2:" + y + System.lineSeparator() +
-                    x + "=" + y);
+
+        if (n2 == n1) {
+            System.out.println("n1: " + "n2:" + " n1 == n2");
         }
-        if (x > y ) {
-            System.out.println("n1:" + x + System.lineSeparator() +
-                    "n2:" + y + System.lineSeparator() +
-                    x + ">" + y);
+
+        if (n1 > n2) {
+            System.out.println("n1: " + "n2:" + " n1 > n2");
         }
+
     }
 
     //todo Task 7
-    public void ratingSalesPerson(){
+    public void ratingSalesPerson() {
         // input your solution here
-Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter annual Revenue: ");
+        int rev = sc.nextInt();
 
 
-System.out.println("Enter annual revenue: " );
-int rev = sc.nextInt();
-
-
-if (rev <= 0 || rev >= 100000) {
-    System.out.println("Invalid revenue");
-}else if (0 < rev && rev < 20000) {
-    System.out.println("Poor sales revenue");
-} else if (20000 <= rev && rev < 50000) {
-    System.out.println("Average sales revenue");
-} else if (50000 <= rev && rev < 80000) {
-    System.out.println("Good sales revenue");
-} else if (80000 <= rev && rev < 100000) {
-    System.out.println("Excellent sales revenue");
-}
-
+        if (rev < 0 || rev >= 100000) {
+            System.out.println("Invalid Revenue");
+        } else if (0 <= rev && rev < 20000) {
+            System.out.println("Poor Sales Revenue");
+        } else if (20000 <= rev && rev < 50000) {
+            System.out.println("Average Sales Revenue");
+        } else if (50000 <= rev && rev < 80000) {
+            System.out.println("Good Sales Revenue");
+        } else if (80000 <= rev && rev < 100000) {
+            System.out.println("Excellent Sales Revenue");
+        }
     }
 
     //todo Task 8
     public void getCommissionRate(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter CommissionClass: ");
-        int com = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter CommissionClass: ");
+        int commission = scanner.nextInt();
 
-        switch (com) {
+        switch (commission) {
             case 1:
-                System.out.print("Your Commission Rate was set to 0.01");
+                System.out.println("Your Commission Rate was set to 0.01");
                 break;
             case 2:
-                System.out.print("Your Commission Rate was set to 0.02");
+                System.out.println("Your Commission Rate was set to 0.02");
                 break;
             case 3:
-                System.out.print("Your Commission Rate was set to 0.03");
+                System.out.println("Your Commission Rate was set to 0.03");
                 break;
             case 4:
-                System.out.print("Your Commission Rate was set to 0.04");
+                System.out.println("Your Commission Rate was set to 0.04");
                 break;
             default:
-                System.out.println("Your Commission Rate was set to 0.00");
+                System.out.println("Your Commission Rate was set to 0.0");
+        }
+
         }
         // input your solution here
-    }
+
 
     //todo Task 9
     public void leapyear(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Year: ");
         int year = sc.nextInt();
 
         if ( (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
-            System.out.println("Leapyear");
+            System.out.println("Year: " + "Leapyear");
         }else {
-            System.out.println("Not a Leapyear");
+            System.out.println("Year: " + "Not a Leapyear");
         }
         // input your solution here
     }
