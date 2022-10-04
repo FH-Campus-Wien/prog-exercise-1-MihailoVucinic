@@ -13,8 +13,8 @@ public class App {
     //todo Task 2
     public void helloRobot(){
         // input your solution here
-        System.out.println("0123456789012345678901");
-        System.out.println ("         __" + System.lineSeparator() +
+        System.out.println("0123456789012345678901" + System.lineSeparator() +
+        "         __" + System.lineSeparator() +
                 " _(\\    |@@|" + System.lineSeparator() +
                 "(__/\\__ \\--/ __" + System.lineSeparator() +
                 "   \\___|----|  |   __" + System.lineSeparator() +
@@ -54,49 +54,34 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
-        // input your solution here
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int y = sc.nextInt();
 
         System.out.println("Before Swap:");
-        System.out.println("x:" + x);
-        System.out.println("y:" + y);
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
 
         x=x+y;
         y=x-y;
         x=x-y;
 
         System.out.println("After Swap:");
-        System.out.println("x:" + x);
-        System.out.println("y:" + y);
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
+        // input your solution here
     }
 
     //todo Task 6
     public void compareTwoNumbers(){
         // input your solution here
 Scanner sc = new Scanner(System.in);
-
 int x = sc.nextInt();
 int y = sc.nextInt();
 
-if (x < y ) {
-    System.out.println("n1:" + x + System.lineSeparator() +
-            "n2:" + y + System.lineSeparator() +
-            x + "<" + y);
-}
-if (x == y ) {
-    System.out.println("n1:" + x + System.lineSeparator() +
-            "n2:" + y + System.lineSeparator() +
-            x + "=" + y);
-}
-        if (x > y ) {
-            System.out.println("n1:" + x + System.lineSeparator() +
-                    "n2:" + y + System.lineSeparator() +
-                    x + ">" + y);
-        }
-
-
+boolean greater = x > y;
+boolean less = y > x;
+boolean equal = x == y;
     }
 
     //todo Task 7
