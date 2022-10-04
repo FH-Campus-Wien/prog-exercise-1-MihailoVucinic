@@ -14,7 +14,7 @@ public class App {
     public void helloRobot(){
         // input your solution here
         System.out.println("0123456789012345678901" + System.lineSeparator() +
-        "         __" + System.lineSeparator() +
+                "         __" + System.lineSeparator() +
                 " _(\\    |@@|" + System.lineSeparator() +
                 "(__/\\__ \\--/ __" + System.lineSeparator() +
                 "   \\___|----|  |   __" + System.lineSeparator() +
@@ -79,15 +79,44 @@ Scanner sc = new Scanner(System.in);
 int x = sc.nextInt();
 int y = sc.nextInt();
 
-boolean greater = x > y;
-boolean less = y > x;
-boolean equal = x == y;
+        if (x < y ) {
+            System.out.println("n1:" + x + System.lineSeparator() +
+                    "n2:" + y + System.lineSeparator() +
+                    x + "<" + y);
+        }
+        if (x == y ) {
+            System.out.println("n1:" + x + System.lineSeparator() +
+                    "n2:" + y + System.lineSeparator() +
+                    x + "=" + y);
+        }
+        if (x > y ) {
+            System.out.println("n1:" + x + System.lineSeparator() +
+                    "n2:" + y + System.lineSeparator() +
+                    x + ">" + y);
+        }
     }
 
     //todo Task 7
     public void ratingSalesPerson(){
         // input your solution here
+Scanner sc = new Scanner(System.in);
 
+
+System.out.println("Enter annual revenue: " );
+        int rev = sc.nextInt();
+
+
+if (rev < 0 || rev >= 100000) {
+    System.out.println("Invalid revenue");
+}else if (0 <= rev && rev < 20000) {
+    System.out.println("Poor sales revenue");
+} else if (20000 <= rev && rev < 50000) {
+    System.out.println("Average sales revenue");
+} else if (50000 <= rev && rev < 80000) {
+    System.out.println("Good sales revenue");
+} else if (80000 <= rev && rev < 100000) {
+    System.out.println("Excellent sales revenue");
+}
 
     }
 
