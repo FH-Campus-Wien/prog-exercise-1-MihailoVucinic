@@ -160,16 +160,30 @@ public class App {
 
     //todo Task 10
     public void transposedNumbers(){
+Scanner sc = new Scanner(System.in);
+int x = sc.nextInt();
+int y = 0;
 
-
-        // input your solution here
+if (x > 99 && x < 1000) {
+    while (x != 0) {
+        y = y * 10 + x % 10;
+        x = x / 10;
+    }
+    System.out.println("Number: " + y);
+}
+    // input your solution here
+        /** The following :      lines of code have been taken from the Internet
+         * int y = 0;
+         * while (x != 0) {
+         * y = y * 10 + x % 10;
+         * x = x / 10;
+         *///www.youtube.com/watch?v=m0lMpNIG6vU&t=305s, last visit: 04.10.2022 (da fehlt ein https, jedoch spielt Intelij bei mir dann verrückt)
     }
 
+        public static void main(String[] args){
+            App exercise1 = new App();
 
-    public static void main(String[] args){
-        App exercise1 = new App();
-
-        System.out.println("Task 1: Say Hello World");
+            System.out.println("Task 1: Say Hello World");
         exercise1.sayHelloWorld();
 
         System.out.println("\nTask 2: Hello Robot");
